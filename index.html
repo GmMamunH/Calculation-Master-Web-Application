@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculation Master Web Application</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Calculation Master Web Application</h1>
+      <div class="flex">
+        <!-- input section  -->
+        <section class="input-section">
+          <div class="grid">
+            <section class="single-box">
+              <h3>Calculate addition between two numbers:</h3>
+              <input
+                id="addNum1"
+                type="number"
+                placeholder="Enter your 1st number"
+                required
+              />
+
+              <input
+                id="addNum2"
+                type="number"
+                placeholder="Enter your 2nd number"
+                required
+              />
+
+              <button class="btn" id="addBtn" type="button">Calculate</button>
+            </section>
+            <!-- =======  two addition numbers calculate end =======-->
+
+            <section class="single-box">
+              <h3>Calculate subtraction between two numbers:</h3>
+              <input
+                id="subNum1"
+                type="number"
+                placeholder="Enter your 1st number"
+                required
+              />
+
+              <input
+                id="subNum2"
+                type="number"
+                placeholder="Enter your 2nd number"
+                required
+              />
+
+              <button class="btn" id="subBtn" type="button">Calculate</button>
+            </section>
+            <!-- ===== two subtraction numbers calculate end ===== -->
+
+            <section class="single-box">
+              <h3>Calculate division between two numbers:</h3>
+              <input
+                id="divNum1"
+                type="number"
+                placeholder="Enter your 1st number"
+                required
+              />
+
+              <input
+                id="divNum2"
+                type="number"
+                placeholder="Enter your 2nd number"
+                required
+              />
+
+              <button class="btn" id="divBtn" type="button">Calculate</button>
+            </section>
+            <!-- ===== two division numbers calculate end ===== -->
+
+            <section class="single-box">
+              <h3>Calculate multiplication between two numbers:</h3>
+              <input
+                id="mulNum1"
+                type="number"
+                placeholder="Enter your 1st number"
+                required
+              />
+
+              <input
+                id="mulNum2"
+                type="number"
+                placeholder="Enter your 2nd number"
+                required
+              />
+
+              <button class="btn" id="mulBtn" type="button">Calculate</button>
+            </section>
+            <!-- ===== two multiplication numbers calculate end ===== -->
+
+            <section class="single-box">
+              <h3>Calculate remainder between two numbers:</h3>
+              <input
+                id="remNum1"
+                type="number"
+                placeholder="Enter your 1st number"
+                required
+              />
+
+              <input
+                id="remNum2"
+                type="number"
+                placeholder="Enter your 2nd number"
+                required
+              />
+
+              <button class="btn" id="remBtn" type="button">Calculate</button>
+            </section>
+            <!-- ===== two remainder numbers calculate end ===== -->
+
+            <section class="single-box">
+              <h3>Simple Interest Calculator:</h3>
+              <input
+                id="intNum1"
+                type="number"
+                placeholder="Enter your principal balance"
+                required
+              />
+
+              <input
+                id="intNum2"
+                type="number"
+                placeholder="Enter your interest rate (per year)"
+                required
+              />
+              <input
+                id="intNum3"
+                type="number"
+                placeholder="Enter your loan paid time (year)"
+                required
+              />
+
+              <button class="btn" id="intBtn" type="button">Calculate</button>
+            </section>
+            <!-- ===== interest calculate end ===== -->
+
+            <section class="single-box">
+              <h3>Fahrenheit to Celsius (°F to °C) conversion calculator:</h3>
+              <input
+                id="fahrenheit"
+                type="number"
+                placeholder="Enter Fahrenheit Degree (°F )"
+                required
+              />
+
+              <button class="btn" id="fahrenheitBtn" type="button">
+                Calculate
+              </button>
+            </section>
+            <!-- ===== Fahrenheit to Celsius (°F to °C) conversion calculator end ===== -->
+
+            <section class="single-box">
+              <h3>Celsius to Fahrenheit (°C to °F) conversion calculator:</h3>
+              <input
+                id="celsius"
+                type="number"
+                placeholder="Enter Celsius Degree (°C) "
+                required
+              />
+
+              <button class="btn" id="celsiusBtn" type="button">
+                Calculate
+              </button>
+            </section>
+            <!-- ===== Celsius To Fahrenheit (°C to °F) conversion calculator end ===== -->
+
+            <section class="single-box">
+              <h3>Area of Circle calculator:</h3>
+              <img
+                src="./assets/images/Area-of-circle.png"
+                alt="Area-of-circle"
+              />
+              <input
+                id="areaCircle"
+                type="number"
+                placeholder="Enter your value (cm) "
+                required
+              />
+
+              <button class="btn" id="areaCircleBtn" type="button">
+                Calculate
+              </button>
+            </section>
+            <!-- ===== Area of Circle calculator end ===== -->
+
+            <section class="single-box">
+              <h3>Area of Rectangle calculator:</h3>
+              <img
+                src="./assets/images/Area-of-Rectangle.png"
+                alt="Area-of-Rectangle"
+              />
+              <p>Area of Rectangle (A) = l * w</p>
+              <input
+                id="areaRectWidth"
+                type="number"
+                placeholder="Enter Width Value (cm) "
+                required
+              />
+
+              <input
+                id="areaRectLength"
+                type="number"
+                placeholder="Enter Length value (cm) "
+                required
+              />
+
+              <button class="btn" id="areaRectBtn" type="button">
+                Calculate
+              </button>
+            </section>
+            <!-- ===== Area of Rectangle calculator end ===== -->
+
+            <section class="single-box">
+              <h3>Area of Square calculator:</h3>
+              <img
+                src="./assets/images/Area-of-square-calculator.png"
+                alt="Area-of-Rectangle"
+              />
+              <p>Area of Square (A)=a<sup>2</sup></p>
+              <input
+                id="areaSquareValue"
+                type="number"
+                placeholder="Enter Value (cm) "
+                required
+              />
+
+              <button class="btn" id="areaSquareBtn" type="button">
+                Calculate
+              </button>
+            </section>
+            <!-- ===== Area of Square calculator end ===== -->
+
+            <section class="single-box">
+              <h3>Area of Triangle calculator:</h3>
+              <img
+                src="./assets/images/Area-of-Triangle.png"
+                alt="Area-of-Triangle"
+              />
+
+              <input
+                id="areaTriangleBase"
+                type="number"
+                placeholder="Enter Base Value (cm) "
+                required
+              />
+              <input
+                id="areaTriangleHight"
+                type="number"
+                placeholder="Enter Hight Value (cm) "
+                required
+              />
+
+              <button class="btn" id="areaTriangleBtn" type="button">
+                Calculate
+              </button>
+            </section>
+            <!-- ===== Area of Triangle calculator end ===== -->
+
+            <section class="single-box">
+              <h3>Area of Parallelogram calculator:</h3>
+              <img
+                src="./assets/images/Area-of-Parallelogram.png"
+                alt="Area-of-Parallelogram"
+              />
+              <p>Area = Base * Height</p>
+              <input
+                id="areaParalBase"
+                type="number"
+                placeholder="Enter Parallelogram Base Value (cm) "
+                required
+              />
+              <input
+                id="areaParalHight"
+                type="number"
+                placeholder="Enter Parallelogram Hight Value (cm) "
+                required
+              />
+
+              <button class="btn" id="areaParalBtn" type="button">
+                Calculate
+              </button>
+            </section>
+            <!-- ===== Area of Parallelogram calculator end ===== -->
+
+            <section class="single-box">
+              <h3>Area of Rhombus calculator:</h3>
+
+              <img
+                src="./assets/images/Area-of-Rhombus.png"
+                alt="Area-of-Rhombus"
+              />
+
+              <p>Area = 1/2 * d1 * d2</p>
+
+              <input
+                id="areaRhombusD1"
+                type="number"
+                placeholder="Enter Rhombus D1 Value (cm) "
+                required
+              />
+
+              <input
+                id="areaRhombusD2"
+                type="number"
+                placeholder="Enter Rhombus D2 Value (cm) "
+                required
+              />
+
+              <button class="btn" id="areaRhombusBtn" type="button">
+                Calculate
+              </button>
+            </section>
+            <!-- ===== Area of Parallelogram calculator end ===== -->
+
+            <section class="single-box">
+              <h3>Area of Trapezoid calculator:</h3>
+              <img
+                src="./assets/images/Area-of-Trapezoid.png"
+                alt="Area-of-Trapezoid"
+              />
+
+              <input
+                id="areaTrapezoidA"
+                type="number"
+                placeholder="Enter Trapezoid Base A Value (cm) "
+                required
+              />
+
+              <input
+                id="areaTrapezoidB"
+                type="number"
+                placeholder="Enter Trapezoid Base B Value (cm) "
+                required
+              />
+
+              <input
+                id="areaTrapezoidHeight"
+                type="number"
+                placeholder="Enter Trapezoid Height Value (cm) "
+                required
+              />
+
+              <button class="btn" id="areaTrapezoidBtn" type="button">
+                Calculate
+              </button>
+            </section>
+            <!-- ===== Area of Trapezoid calculator end ===== -->
+
+            <section class="single-box">
+              <h3>Area of Ellipse calculator:</h3>
+              <img
+                src="./assets/images/Area-of-Ellipse.png"
+                alt="Area-of-Ellipse"
+              />
+
+              <input
+                id="areaEllipseA"
+                type="number"
+                placeholder="Enter Ellipse Base A Value (cm) "
+                required
+              />
+
+              <input
+                id="areaEllipseB"
+                type="number"
+                placeholder="Enter Ellipse Base B Value (cm) "
+                required
+              />
+
+              <button class="btn" id="areaEllipseBtn" type="button">
+                Calculate
+              </button>
+            </section>
+            <!-- ===== Area of Ellipse calculator end ===== -->
+
+            <section class="single-box">
+              <h3>Area of Cube calculator:</h3>
+              <img src="./assets/images/Area-of-Cube.png" alt="Area-of-Cube" />
+
+              <p>6a<sup>2</sup></p>
+
+              <input
+                id="areaCubeA"
+                type="number"
+                placeholder="Enter Cube Base A Value (cm) "
+                required
+              />
+
+              <button class="btn" id="areaCubeBtn" type="button">
+                Calculate
+              </button>
+            </section>
+            <!-- ===== Area of Cube calculator end ===== -->
+
+            <section class="single-box">
+              <h3>Letter Grade calculator:</h3>
+              <img src="./assets/images/result.png" alt="Letter Grade Calculation" />
+
+              <input
+                id="inputNumber"
+                type="number"
+                placeholder="Enter your number"
+                required
+              />
+
+              <button class="btn" id="resultBtn" type="button">
+               Your Letter Grade
+              </button>
+            </section>
+            <!-- ===== Area of Cube calculator end ===== -->
+          </div>
+          <!-- grid end -->
+        </section>
+
+        <!-- ============ input section end Output *===* section start ============ -->
+
+        <section class="output-section">
+          <h1>Output</h1>
+          <div class="output-box">
+            <div class="result" id="result"></div>
+          </div>
+          <!-- input 1 -->
+        </section>
+      </div>
+    </section>
+
+    <!-- ============ footer section ============ -->
+    <footer class="footer">
+      <div class="container">
+        <h4>© Copyrights 2024 By Md Mamun Hossain. All Rights Reserved.</h4>
+      </div>
+    </footer>
+
+    <!-- ================= js link ==================== -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
