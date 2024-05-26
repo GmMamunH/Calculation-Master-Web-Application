@@ -158,7 +158,7 @@ remSubmit.addEventListener("click", (e) => {
     
     <br/> <br/> 
     
-    The remainder of the two numbers is: ${result}.
+    The remainder of the two numbers is: ${result}
     
     <br/> <br/> 
     
@@ -195,7 +195,15 @@ intSubmit.addEventListener("click", (e) => {
       parseInt(intNum3.value)
     );
 
-    output.innerHTML = `Output  interest:- <br/> <br/> Total Interest: ${result}/-.<br/> <br/>  Calculate: (${intNum1.value} * ${intNum2.value}% * ${intNum3.value} = ${result}/- . <br/> <br/>Formula: Interest = Principal Amount * Interest Rate * Loan Term`;
+    output.innerHTML = `Output  interest:- <br/> <br/> Total Interest: ${result}/- 
+    
+    <br/> <br/>  
+    
+    Calculate: (${intNum1.value} * ${intNum2.value}% * ${intNum3.value} = ${result}/-  
+    
+    <br/> <br/>
+
+    Formula: Interest = Principal Amount * Interest Rate * Loan Term`;
 
     intNum1.value = "";
     intNum2.value = "";
@@ -267,7 +275,7 @@ celsiusSubmit.addEventListener("click", (e) => {
     
     <br/> <br/>  
     
-    Calculate: (${celsius.value} * 1.8) + 32 = ${result}°C . 
+    Calculate: (${celsius.value} * 1.8) + 32 = ${result}°F . 
     <br/> <br/>
     
     Formula: Fahrenheit = (celsius * 1.8) + 32`;
@@ -302,7 +310,7 @@ areaCircleSubmit.addEventListener("click", (e) => {
     Area of circle: ${result} cm/sq ft. 
     
     <br/> <br/> 
-    Calculate: π * (${areaCircle.value} * ${areaCircle.value} ) = ${result} cm/sq ft 
+    Calculate: π * (${areaCircle.value} * ${areaCircle.value} ) = ${result} cm/sq ft. 
     
     <br/> <br/>
     
@@ -342,7 +350,7 @@ areaRectSubmit.addEventListener("click", (e) => {
     
     <br/> <br/>  
     
-    Calculate: (${areaRectWidth.value} * ${areaRectLength.value}) = ${result} cm/sq ft 
+    Calculate: (${areaRectWidth.value} * ${areaRectLength.value}) = ${result} cm/sq ft. 
     
     <br/> <br/>
     
@@ -373,11 +381,11 @@ areaSquareSubmit.addEventListener("click", (e) => {
     
     <br/> <br/> 
     
-    Area of Square: ${result} cm/sq ft .
+    Area of Square: ${result} cm/sq ft.
     
     <br/> <br/>  
     
-    Calculate: ${areaSquareValue.value}<sup>2</sup> = ${result} cm/sq ft 
+    Calculate: ${areaSquareValue.value}<sup>2</sup> = ${result} cm/sq ft. 
     
     <br/> <br/>
     
@@ -413,11 +421,11 @@ areaTriangleSubmit.addEventListener("click", (e) => {
     
     <br/> <br/> 
     
-    Area of triangle: ${result} cm/sq ft .
+    Area of triangle: ${result} cm/sq ft.
     
     <br/> <br/>  
     
-    Calculate: 1/2 * ${areaTriangleBase.value} * ${areaTriangleHight.value} = ${result} cm/sq ft 
+    Calculate: 1/2 * ${areaTriangleBase.value} * ${areaTriangleHight.value} = ${result} cm/sq ft. 
     
     <br/> <br/>
     
@@ -454,7 +462,7 @@ areaParalSubmit.addEventListener("click", (e) => {
     
     <br/> <br/> 
     
-    Area of Parallelogram: ${result} cm/sq ft .
+    Area of Parallelogram: ${result} cm/sq ft.
     
     <br/> <br/>  
     
